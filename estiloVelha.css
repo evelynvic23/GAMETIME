@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+body{
+    background: rgb(217, 122, 252);
+background: radial-gradient(circle, rgba(235,195,249,1) 20%, rgb(83, 115, 155) 80%);
+}
+#jogo{
+   
+    width: 603px;
+    height: 603px;
+    border: solid black 3px;
+    display: inline-block;
+  
+    margin-left: 34%;
+    margin-top: 2%;
+}
+.texto{
+    font-size: 40px;
+    font-family: 'Castoro Titling', cursive; 
+    text-align: center;
+   
+}
+
+.texto2{
+    font-family: 'Finger Paint', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: #11315f;
+}
+
+
+
+#resultado{
+    margin-left: 40%;
+    
+}
+
+#resposta{
+
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(219, 11, 202);
+}
+
+.linha{
+    height: 200px;
+    border-bottom: solid 1px;
+}
+.casa{
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
+}
+.xis{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(235, 80, 183);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bola{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(235, 80, 183);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.velha{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(235, 80, 183);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input[type=button], input[type=submit], input[type=reset]{
+    background-color: #5a03ac;
+    background-image: linear-gradient(to botton, #b019d6, #e90db2);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 40px;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    background: #9f06ce;
+    background-image: linear-gradient(to bottom, #a7158e, #e71ee7);
+    text-decoration: none;
+}
+#btnNovo{
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 20px 30px;
+    perspective: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+#btnNovo:hover{
+    transition: 1s;
+    background-color: #3767ad;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color:#2b2b2b;
+  
+  }
+  a{
+    text-decoration: none;
+    color: #1A1A1A;
+  }
+  .ti{
+    width: 250px;
+  }
+  .logo2 {
+    display: none;
+  }
+  .lo{
+    width: 200px;
+  }
+  
+  
+  .logoo {
+    width: 240px;
+    margin-top: 20%;
+    margin-left: -200px;
+    padding: 2%;
+  
+    
+  }
+  
+  #menu {
+    margin-top: 6%;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  
+  }
+  
+  #menu a {
+  
+    display: block;
+    padding: 2.0rem;
+    color: #fefffe;
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.4em;
+  
+   
+  }
+  
+  #menu a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: #a5b6b2;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+
+  footer{
+    background-color:#2b2b2b;
+    padding: 50px 0;
+  }
+  .container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+  }
+  .row-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .footer-col ul{
+    list-style: none;
+  }
+  .footer-col ul li{
+    margin: 10px 0;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+  }
+  .footer-col .medias-socias{
+    margin-top: 30px;
+  }
+  .footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+  }
+  .footer-col .medias-socias a i{
+    font-size: 20px;
+  }
+  
+  .footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+  }
+  .footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+  }
+  .footer-col .form-sub input::placeholder{
+    color: white;
+  }
+  .footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .texto{
+        font-size: 35px;
+        font-family: 'Castoro Titling', cursive; 
+        text-align: center;
+       
+    }
+    h
+    .texto2{
+        font-family: 'Finger Paint', cursive;
+        font-size: 30px;
+        text-align: center;
+        color: #11315f;
+    }
+    .inputbox {
+        position: relative;
+        width: 196px;
+        margin-left: 1%;
+       
+      }
+      #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #0e1c23;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    
+      }
+    
+    
+    
+      #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+    
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 2rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        color: #ffffff;
+    
+      }
+    
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+    
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+    
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+    
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+    
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+    
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+      .logo2 {
+          display: block;
+          width: 50%;
+          margin-right: 20%;
+          margin-bottom: 3%;
+      
+        }
+      
+        .logoo {
+          display: none;
+        }
+        .footer-col{
+          width: 100%;
+      }
+      
+    
+      }

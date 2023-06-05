@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+ 
+
+  
+  background-image: url(imagens/jogo3.jpg);
+  background-size: cover;
+}
+
+body h2 {
+  color: white;
+}
+
+.dentro{
+  display: flex;
+  justify-content: center;
+}
+.dentro2{
+  display: flex;
+  justify-content: center;
+}
+main {
+
+  background-color: rgba(253, 253, 253, 0.699);
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 150%;
+  gap: 10px;
+  font-size: 21px;
+
+}
+
+.spnQtd {
+  text-align: end;
+  font-size: 21px;
+}
+
+.resp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  font-size: 21px;
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffffef;
+  color: rgb(0, 161, 70);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 21px;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 21px;
+}
+
+.finish button {
+  text-align: center;
+  font-size: 21px;
+}
+
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+#body{
+    background-color: #000000;
+}
+
+
+
+/* /////////////////// */
+
+#header {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color:#2b2b2b;
+  
+  }
+  a{
+    text-decoration: none;
+    color: #1A1A1A;
+  }
+  .ti{
+    width: 250px;
+  }
+  .logo2 {
+    display: none;
+  }
+  .lo{
+    width: 200px;
+  }
+  
+  
+  .logoo {
+    width: 240px;
+    margin-top: 20%;
+    margin-left: -200px;
+    padding: 2%;
+
+    
+  }
+  
+  #menu {
+    margin-top: 6%;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  
+  }
+  
+  #menu a {
+  
+    display: block;
+    padding: 2.0rem;
+    color: #fefffe;
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.4em;
+  
+   
+  }
+  
+  #menu a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: #a5b6b2;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  #carouselExampleCaptions{
+    width: 87%;
+    margin: 0 auto;
+  }
+  .personagens{
+    display: flex;
+    justify-content: center;
+  }
+  .mude{
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #d3d3d3;
+  }
+
+
+ /* Cards */
+
+ 
+
+
+
+
+
+  /* footer */
+
+  footer{
+    background-color:#2b2b2b;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsividade */
+
+
+  @media (max-width: 600px) {
+   
+   
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #0e1c23;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+  
+    }
+    body {
+ 
+
+  
+      background-image: url(imagens/jogo3-m.jpg);
+      background-size: cover;
+    }
+  
+  
+  
+  
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+  
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 2rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      color: #ffffff;
+  
+    }
+  
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+  
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+  
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+  
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    .logo2 {
+        display: block;
+        width: 50%;
+        margin-right: 20%;
+        margin-bottom: 3%;
+    
+      }
+    
+      .logoo {
+        display: none;
+      }
+      .footer-col{
+        width: 100%;
+    }
+    .jogo4{
+      display: flex;
+      flex-direction: column;
+      margin-left: 24%;
+      
+      
+    }
+    .jogo5{
+      display: flex;
+      flex-direction: column;
+      margin-left: 24%;
+    }
+  
+    .card {
+  margin-bottom: 7%;
+    }
+
+    
+
+     
+}
+
+
+ 

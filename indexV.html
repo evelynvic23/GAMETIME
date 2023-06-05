@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="estiloVelha.css">
+</head>
+<!-- Ao iniciar o html, ele executa a função recomeca() -->
+
+<body onload="recomeca()">
+
+    <header id="header">
+
+
+        <a href="index.html"> <img class="logoo" src="imagens/logo.png" /></a>
+        <img class="logo2" src="imagens/logo2.png" />
+    
+    
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            Menu
+            <span id="hamburger"></span>
+          </button>
+    
+    
+    
+          <ul id="menu" role="menu">
+              <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+              <li> <a href="index.html" data-menu="C">JOGOS</a></li>
+              <li> <a href="#">SOBRE NÓS</a></li>
+           
+          </ul>
+    
+        </nav>
+    
+    
+    
+    
+      </header>
+
+
+    <p class="texto">
+        Jogo da Velha 
+    </p>
+    <p class="texto2">
+        BORBOLETA X FLOR 
+    </p>
+
+
+    <div id="jogo">
+        <div class="linha">
+            <div class="casa" id="casa0" onclick="verifica(0)">
+                <center>
+                <img src="" id="img0" width="150px"/>
+            </center>
+            </div>
+            <div class="casa" id="casa1" onclick="verifica(1)">
+                <center>
+                <img src="" id="img1" width="150px"/>
+            </center>
+            </div>
+            <div class="casa" id="casa2" onclick="verifica(2)">
+                <center>
+                <img src="" id="img2" width="150px"/>
+            </center>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="casa" id="casa3" onclick="verifica(3)">
+                <center>
+                <img src="" id="img3" width="150px"/>
+            </center>
+            </div>
+            <div class="casa" id="casa4" onclick="verifica(4)">
+                <center>
+                <img src="" id="img4" width="150px"/>
+            </center>
+            </div>
+            <div class="casa" id="casa5" onclick="verifica(5)">
+                <center>
+                <img src="" id="img5" width="150px"/>
+            </center>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="casa" id="casa6" onclick="verifica(6)">
+                <center>
+                <img src="" id="img6" width="150px"/>
+            </center>
+            </div>
+            <div class="casa" id="casa7" onclick="verifica(7)">
+                <center>
+                <img src="" id="img7"width="150px" />
+            </center>
+            </div>
+            <div class="casa" id="casa8" onclick="verifica(8)">
+                <center>
+                <img src="" id="img8"width="150px" />
+            </center>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultado">
+        <p id="resposta">RESULTADO:</p>
+        <br>
+        <p id="xis" class="xis">Pontos Borboleta: 0</p>
+        <p id="bola" class="bola">Pontos Flor: 0</p>
+        <p id="velha" class="velha">VELHA: 0</p>
+
+        <form>
+            <input type="button" id="btnNovo" value="NOVO JOGO" onclick="recomeca()">
+        </form>
+
+    </div>
+
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+               
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Sobre nós </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> novidades</a></li>
+                        <div>
+                          <img src="imagens/logo2.png" alt="" class="lo">
+                        </div>
+                    </ul>
+                </div>
+              
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">telefone: 11 97726-5580</a></li>
+                        <li><a href="#">Instagram: @game_time</a></li>
+                      
+                    </ul>
+    
+                    
+                </div>
+               
+            </div>
+    
+           
+    
+            
+           
+        </div>
+    
+      
+    
+       
+    </footer>
+      
+    
+
+    <script type="text/javascript" src="jscript.js"></script>
+
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+    
+        function toggleMenu(event) {
+          if (event.type === 'touchstart') event.preventDefault();
+          const nav = document.getElementById('nav');
+          nav.classList.toggle('active');
+          const active = nav.classList.contains('active');
+          event.currentTarget.setAttribute('aria-expanded', active);
+          if (active) {
+            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+          } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+          }
+        }
+    
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+      </script>
+
+</body>
+</html>

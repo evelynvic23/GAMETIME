@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap');
+
+#body{
+    background-color: #000000;
+}
+
+
+
+/* /////////////////// */
+
+#header {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color:#2b2b2b;
+  
+  }
+  a{
+    text-decoration: none;
+    color: #1A1A1A;
+  }
+  .ti{
+    width: 250px;
+  }
+  .logo2 {
+    display: none;
+  }
+  .lo{
+    width: 200px;
+  }
+  
+  
+  .logoo {
+    width: 240px;
+    margin-top: 20%;
+    margin-left: -200px;
+    padding: 2%;
+
+    
+  }
+  
+  #menu {
+    margin-top: 6%;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  
+  }
+  
+  #menu a {
+  
+    display: block;
+    padding: 2.0rem;
+    color: #fefffe;
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.4em;
+  
+   
+  }
+  
+  #menu a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: #a5b6b2;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  #carouselExampleCaptions{
+    width: 87%;
+    margin: 0 auto;
+  }
+  .personagens{
+    display: flex;
+    justify-content: center;
+  }
+  .mude2{
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    color: #f1f1f1;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .mude3{
+    text-align: center;
+   margin-bottom: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    color: #f1f1f1;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .mude{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+   
+  }
+  .cha{
+    width: 200px;
+  
+  }
+
+
+ /* Cards */
+
+ 
+
+
+
+
+
+  /* footer */
+
+  footer{
+    background-color:#2b2b2b;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+
+
+/* //////////////////////////////// */
+/* Responsivo */
+
+
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 290px;
+  background: rgb(82, 82, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(400deg,#ffffff,#dbdbdb);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#dbdbdb,#ffffff);
+  filter: blur(30px);
+}
+
+.card b {
+  position: absolute;
+  inset: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.card img {
+  position: absolute;
+  z-index: 3;
+  scale: 0.8;
+
+}
+.imgg{
+  width: 233px;
+  height: 344px;
+}
+.jogo4{
+  display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.jogo5{
+  display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+  .personagens{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .c1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .c2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.game{
+  font-size: 90px;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  margin-top: 3%;
+}
+#glow {
+  color: rgb(59, 0, 99);
+  text-align: center;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* Text glowing from onw shade to other shade */
+@-webkit-keyframes glow {
+  from {
+      text-shadow: 0 0 10px rgb(221, 221, 221),
+                   0 0 20px rgb(221, 221, 221), 
+                   0 0 30px rgb(221, 221, 221), 
+                   0 0 40px rgb(221, 221, 221),
+                   0 0 50px rgb(221, 221, 221),
+                   0 0 60px rgb(221, 221, 221), 
+                   0 0 70px rgb(221, 221, 221);
+  }
+  to {
+      text-shadow: 0 0 20px rgb(221, 221, 221);
+                 
+  }
+}
+
+
+
+  /* Responsividade */
+
+
+  @media (max-width: 490px) {
+    #t2{
+      height: 250px;
+    }
+    .mude{
+      text-align: center;
+      padding-top: 5%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      color: #d3d3d3;
+    }
+    #carouselExampleCaptions{
+      width: 94%;
+      height: 250px;
+      margin: 0 auto;
+    }
+    .ti{
+      width: 120px;
+    }
+    .c1{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .c2{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .personagens{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #0e1c23;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+  
+    }
+  
+  
+  
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+  
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 2rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      color: #ffffff;
+  
+    }
+  
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+  
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+  
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+  
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    .logo2 {
+        display: block;
+        width: 50%;
+        margin-right: 20%;
+        margin-bottom: 3%;
+    
+      }
+    
+      .logoo {
+        display: none;
+      }
+      .footer-col{
+        width: 100%;
+    }
+    .jogo4{
+      display: flex;
+      flex-direction: column;
+      margin-left: 24%;
+      
+      
+    }
+    .jogo5{
+      display: flex;
+      flex-direction: column;
+      margin-left: 24%;
+    }
+  
+    .card {
+  margin-bottom: 7%;
+    }
+
+    
+
+     
+}

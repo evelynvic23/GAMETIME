@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Barbie</title>
+
+  <link rel="stylesheet" href="cssJogo2.css">
+</head>
+<body>
+
+
+
+  <header id="header">
+
+
+    <a href="index.html"> <img class="logoo" src="imagens/logo.png" /></a>
+    <img class="logo2" src="imagens/logo2.png" />
+
+
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        Menu
+        <span id="hamburger"></span>
+      </button>
+
+
+
+      <ul id="menu" role="menu">
+          <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+          <li> <a href="index.html" data-menu="C">JOGOS</a></li>
+          <li> <a href="#">SOBRE NÓS</a></li>
+       
+      </ul>
+
+    </nav>
+
+
+
+
+  </header>
+
+  <div class="dentro2">
+
+    <h2>QUIZ Barbie</h2>
+  </div>
+
+
+
+  <div class="dentro">
+
+   
+    <main>
+  
+    
+      <div class="content">
+        <span class="spnQtd"></span>
+        <span class="question"></span>
+        <div class="resp"></div>
+      </div>
+      <div class="finish">
+        <span></span>
+        <button>Reiniciar</button>
+      </div>
+    </main>
+
+  </div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+
+  <footer>
+    <div class="container-footer">
+        <div class="row-footer">
+           
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#"> Sobre nós </a></li>
+                    <li><a href=""> política de privacidade </a></li>
+                    <li><a href=""> novidades</a></li>
+                    <div>
+                      <img src="imagens/logo2.png" alt="" class="lo">
+                    </div>
+                </ul>
+            </div>
+          
+            <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">telefone: 11 97726-5580</a></li>
+                    <li><a href="#">Instagram: @game_time</a></li>
+                  
+                </ul>
+
+                
+            </div>
+           
+        </div>
+
+       
+
+        
+       
+    </div>
+
+  
+
+   
+</footer>
+
+  
+  <script src="scriptJogo2.js" type="module"></script>
+
+
+  <script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+    function toggleMenu(event) {
+      if (event.type === 'touchstart') event.preventDefault();
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('active');
+      const active = nav.classList.contains('active');
+      event.currentTarget.setAttribute('aria-expanded', active);
+      if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+      } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+      }
+    }
+
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+ 
+</body>
+</html>

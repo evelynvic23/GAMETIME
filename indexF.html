@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estiloF.css">
+    <title>Jogo da Forca</title>
+</head>
+
+<body onload="sorteia()">
+
+
+
+    <header id="header">
+
+        
+
+
+        <a href="index.html"> <img class="logoo" src="imagens/logo.png" /></a>
+        <img class="logo2" src="imagens/logo2.png" />
+    
+    
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            Menu
+            <span id="hamburger"></span>
+          </button>
+    
+    
+    
+          <ul id="menu" role="menu">
+              <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+              <li> <a href="index.html" data-menu="C">JOGOS</a></li>
+              <li> <a href="#">SOBRE NÓS</a></li>
+           
+          </ul>
+    
+        </nav>
+    
+    
+    
+    
+      </header>
+  
+
+
+    <div class="conteudo">
+
+  
+        <div id="tabelaDiv">
+            <table border="0" id="tabela" align="center">
+                <tr>
+                    <td id="tabAcerto">
+                        <div id="acerto">ACERTOS: 0</div><br>
+                        <div id="palcerta">PALAVRAS CERTAS: 0<br>PALAVRAS ERRADAS: 0</div><br>
+                    </td>
+                    <td>
+                        <div id="forca" class="anima">
+                            <img src="imagens/forca1.png" id="imagem" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table border="0" id="tabela" align="center">
+                <tr>
+                    <td>
+                        <br>
+                        <div id="tema">TEMA: FRUTA</div>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="tentativa">
+                            <form action="" id="tenta"></form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+
+       
+
+
+  
+
+     
+
+
+           
+           
+
+            <!-- //tabela com as letras -->
+            <table border="0" id="tabela" align="center">
+                <tr>
+                    <td>
+                        <div id="letras" align="center">
+                            <p>
+                                <button type="button" id="Q" onmousedown="confere('Q')" onmouseup="acabou()">Q</button>
+                                <button type="button" id="W" onmousedown="confere('W')" onmouseup="acabou()">W</button>
+                                <button type="button" id="E" onmousedown="confere('E')" onmouseup="acabou()">E</button>
+                                <button type="button" id="R" onmousedown="confere('R')" onmouseup="acabou()">R</button>
+                                <button type="button" id="T" onmousedown="confere('T')" onmouseup="acabou()">T</button>
+                                <button type="button" id="Y" onmousedown="confere('Y')" onmouseup="acabou()">Y</button>
+                                <button type="button" id="U" onmousedown="confere('U')" onmouseup="acabou()">U</button>
+                                <button type="button" id="I" onmousedown="confere('I')" onmouseup="acabou()">I</button>
+                                <button type="button" id="O" onmousedown="confere('O')" onmouseup="acabou()">O</button>
+                                <button type="button" id="P" onmousedown="confere('P')" onmouseup="acabou()">P</button>
+                                <br><br>
+                                <button type="button" id="A" onmousedown="confere('A')" onmouseup="acabou()">A</button>
+                                <button type="button" id="S" onmousedown="confere('S')" onmouseup="acabou()">S</button>
+                                <button type="button" id="D" onmousedown="confere('D')" onmouseup="acabou()">D</button>
+                                <button type="button" id="F" onmousedown="confere('F')" onmouseup="acabou()">F</button>
+                                <button type="button" id="G" onmousedown="confere('G')" onmouseup="acabou()">G</button>
+                                <button type="button" id="H" onmousedown="confere('H')" onmouseup="acabou()">H</button>
+                                <button type="button" id="J" onmousedown="confere('J')" onmouseup="acabou()">J</button>
+                                <button type="button" id="K" onmousedown="confere('K')" onmouseup="acabou()">K</button>
+                                <button type="button" id="L" onmousedown="confere('L')" onmouseup="acabou()">L</button>
+                                <button type="button" id="Ç" onmousedown="confere('Ç')" onmouseup="acabou()">Ç</button>
+                                <br><br>
+                                <button type="button" id="Z" onmousedown="confere('Z')" onmouseup="acabou()">Z</button>
+                                <button type="button" id="X" onmousedown="confere('X')" onmouseup="acabou()">X</button>
+                                <button type="button" id="C" onmousedown="confere('C')" onmouseup="acabou()">C</button>
+                                <button type="button" id="V" onmousedown="confere('V')" onmouseup="acabou()">V</button>
+                                <button type="button" id="B" onmousedown="confere('B')" onmouseup="acabou()">B</button>
+                                <button type="button" id="N" onmousedown="confere('N')" onmouseup="acabou()">N</button>
+                                <button type="button" id="M" onmousedown="confere('M')" onmouseup="acabou()">M</button>
+                                <button type="button" id="-" onmousedown="confere('-')" onmouseup="acabou()">-</button>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="container-footer">
+        <div class="row-footer">
+           
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#"> Sobre nós </a></li>
+                    <li><a href=""> política de privacidade </a></li>
+                    <li><a href=""> novidades</a></li>
+                    <div>
+                      <img src="imagens/logo2.png" alt="" class="lo">
+                    </div>
+                </ul>
+            </div>
+          
+            <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">telefone: 11 97726-5580</a></li>
+                    <li><a href="#">Instagram: @game_time</a></li>
+                  
+                </ul>
+
+                
+            </div>
+           
+        </div>
+
+       
+
+        
+       
+    </div>
+
+  
+
+   
+</footer>
+  
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+    function toggleMenu(event) {
+      if (event.type === 'touchstart') event.preventDefault();
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('active');
+      const active = nav.classList.contains('active');
+      event.currentTarget.setAttribute('aria-expanded', active);
+      if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+      } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+      }
+    }
+
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+
+    <script src="scriptF.js"></script>
+
+
+</body>
+
+</html>
